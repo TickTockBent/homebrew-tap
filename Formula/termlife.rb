@@ -5,21 +5,21 @@
 class Termlife < Formula
   desc "Terminal-based Game of Life implementation"
   homepage "https://github.com/ticktockbent/termlife"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ticktockbent/termlife/releases/download/v0.2.0/termlife_0.2.0_darwin_amd64.tar.gz"
-      sha256 "067045cf72501635f55c0b3f976592d828f6f3893c77310b4f7114a265b64b46"
+      url "https://github.com/ticktockbent/termlife/releases/download/v0.3.0/termlife_0.3.0_darwin_amd64.tar.gz"
+      sha256 "de7e5c98a76c8d7627abfea650abfae1acd8bb80958c96d5a56ecb347ad7b79f"
 
       define_method(:install) do
         bin.install "termlife"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ticktockbent/termlife/releases/download/v0.2.0/termlife_0.2.0_darwin_arm64.tar.gz"
-      sha256 "6aa8fcd6f59929aa843bf138c069b2c6f31a0279b1070ef97c2fc82bcaa6acbc"
+      url "https://github.com/ticktockbent/termlife/releases/download/v0.3.0/termlife_0.3.0_darwin_arm64.tar.gz"
+      sha256 "fa9790ec99014501a24a3196a3c8d1bc0fea6a745c9beeda7af4064b3d96f3d2"
 
       define_method(:install) do
         bin.install "termlife"
@@ -29,15 +29,15 @@ class Termlife < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ticktockbent/termlife/releases/download/v0.2.0/termlife_0.2.0_linux_amd64.tar.gz"
-      sha256 "1c8b2d5a8bfe320937265c2413af284160d7e02165ec949cd6ffe6fe104e94c3"
+      url "https://github.com/ticktockbent/termlife/releases/download/v0.3.0/termlife_0.3.0_linux_amd64.tar.gz"
+      sha256 "b515a76eb4059969528e46aab37c550d7ea7a1ef99ad4ec6b382eaaf6a0ff425"
       define_method(:install) do
         bin.install "termlife"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ticktockbent/termlife/releases/download/v0.2.0/termlife_0.2.0_linux_arm64.tar.gz"
-      sha256 "95ca26fd97643196a3326c6bed875be6372bc0b6053b461212b647a01fe118d9"
+      url "https://github.com/ticktockbent/termlife/releases/download/v0.3.0/termlife_0.3.0_linux_arm64.tar.gz"
+      sha256 "bff5af7b742ef885c059187b7eba1d85d3b25f1ad320df0d38448229662dc6ca"
       define_method(:install) do
         bin.install "termlife"
       end
